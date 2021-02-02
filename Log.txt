@@ -1,0 +1,27 @@
+Week of 1/18/21
+Team: 
+Worked on our first installment of our URS thesis.
+
+Week of 1/25/21
+Alex: 
+Finished reducing the size of several of my instruction prefetchers to be around 32 KB:
+    Barça:         112 KB to 33 KB
+    PIPS:         128 KB to 33 KB
+    MANA:         123 KB to 20 KB
+    TAP:         124 KB to 29 KB
+Simulated the reduced prefetchers to observe which ones had the highest speedups.
+David:
+Modified the ChampSim simulator to allow replacement policies to run on the L1I cache. 
+This week and next week I plan to modify the replacement policies, so they are able to run on the L1I cache.
+
+Team:
+Worked on 1st bi-weekly presentation and setup team github.
+
+Week of 2/1/21
+Alex:
+While David is finishing porting those policies, I will work on reducing the D_JOLT prefetcher and figuring out the errors that come up with it.
+Will also figure out how development branch champsim works and how to output results to text files
+
+David:
+Some of the replacement policies are hanging when modified to work on the L1I cache, so this week I hope to fix this along with adding support to ChampSim to export data to an excel sheet.
+Next week I hope to begin creating combination policies with Alex.
