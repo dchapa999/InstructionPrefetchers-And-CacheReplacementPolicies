@@ -19,9 +19,15 @@ Worked on 1st bi-weekly presentation and setup team github.
 
 Week of 2/1/21
 Alex:
-While David is finishing porting those policies, I will work on reducing the D_JOLT prefetcher and figuring out the errors that come up with it.
-Will also figure out how development branch champsim works and how to output results to text files
+This week I got the new version of champsim up and running. I ported all of my prefetchers to the new version except for EIP which is
+still giving me errors I need to resolve. Also, I modified our python scripts to do batch jobs for simulations and results on the new
+ChampSim. 
 
 David:
 Some of the replacement policies are hanging when modified to work on the L1I cache, so this week I hope to fix this along with adding support to ChampSim to export data to an excel sheet.
 Next week I hope to begin creating combination policies with Alex.
+
+Week of 2/8/21
+Alex: I plan to finish running simulations to get a baseline IPC for all of the prefetchers on the new ChampSim.
+
+Team: We will begin combining our prefetchers and cache replacement policies and observing the results.
