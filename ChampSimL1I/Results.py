@@ -17,7 +17,7 @@ for f in files:
     if (".txt" in f):
         if (new_prefetcher in f):
             new.append(f)
-        elif ("baseline-l1i-lru" in f):
+        elif ("baseline_l1i_lru" in f):
             baseline.append(f)
 
 new.sort()
