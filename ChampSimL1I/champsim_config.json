@@ -48,8 +48,8 @@
         "latency": 4,
         "max_read": 2,
         "max_write": 2,
-        "prefetcher": "no_l1i",
-        "replacement": "ship_l1i"
+        "prefetcher": "Barca",
+        "replacement": "lime_l1i"
     },
 
     "L1D": {
