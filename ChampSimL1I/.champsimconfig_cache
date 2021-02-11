@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+{"cpu0l1iprefetcher.a": "prefetcher/Barca", "cpu0l1dprefetcher.a": "prefetcher/no_l1d", "cpu0l2cprefetcher.a": "prefetcher/no_l2c", "cpu0branch_predictor.a": "branch/bimodal", "cpu0btb.a": "btb/basic_btb", "llprefetcher.a": "prefetcher/no_llc", "llreplacement.a": "replacement/lru_llc", "l1ireplacement.a": "replacement/lime_l1i"}
+=======
 {"cpu0l1iprefetcher.a": "prefetcher/Barca", "cpu0l1dprefetcher.a": "prefetcher/no_l1d", "cpu0l2cprefetcher.a": "prefetcher/no_l2c", "cpu0branch_predictor.a": "branch/bimodal", "cpu0btb.a": "btb/basic_btb", "llprefetcher.a": "prefetcher/no_llc", "llreplacement.a": "replacement/lru_llc", "l1ireplacement.a": "replacement/lru_l1i"}
+>>>>>>> 87b523da815f28b59b1193c7285c84bd6042910b

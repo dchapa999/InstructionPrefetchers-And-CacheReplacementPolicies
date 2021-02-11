@@ -46,7 +46,7 @@ obj/llreplacement.a: $(patsubst %.cc,%.o,$(wildcard replacement/lru_llc/*.cc))
 	@mkdir -p $(dir $@)
 	ar -rcs $@ $^
 
-obj/l1ireplacement.a: $(patsubst %.cc,%.o,$(wildcard replacement/lru_l1i/*.cc))
+obj/l1ireplacement.a: $(patsubst %.cc,%.o,$(wildcard replacement/lime_l1i/*.cc))
 	@mkdir -p $(dir $@)
 	ar -rcs $@ $^
 
