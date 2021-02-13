@@ -992,9 +992,7 @@ void O3_CPU::l1i_prefetcher_cycle_operate() {
 
 		// doesn't do any good to issue prefetches if the queue is full
 
-
 		if (L1I.PQ.occupancy() < L1I_PQ_SIZE) {
-
 
 			prefetch_info p;
 			if (prefetch_queue.size()) {
