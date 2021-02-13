@@ -18,7 +18,11 @@ clean:
 bin/champsim: $(patsubst %.cc,%.o,$(wildcard src/*.cc)) obj/cpu0l1iprefetcher.a obj/cpu0l1dprefetcher.a obj/cpu0l2cprefetcher.a obj/cpu0branch_predictor.a obj/cpu0btb.a obj/llprefetcher.a obj/llreplacement.a obj/l1ireplacement.a
 	$(CXX) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
+<<<<<<< HEAD
 obj/cpu0l1iprefetcher.a: $(patsubst %.cc,%.o,$(wildcard prefetcher/FNL-MMA/*.cc))
+=======
+obj/cpu0l1iprefetcher.a: $(patsubst %.cc,%.o,$(wildcard prefetcher/Barca/*.cc))
+>>>>>>> 650d8d2973b64b932334dcc090edcd174dd8a406
 	@mkdir -p $(dir $@)
 	ar -rcs $@ $^
 
@@ -46,7 +50,11 @@ obj/llreplacement.a: $(patsubst %.cc,%.o,$(wildcard replacement/lru_llc/*.cc))
 	@mkdir -p $(dir $@)
 	ar -rcs $@ $^
 
+<<<<<<< HEAD
 obj/l1ireplacement.a: $(patsubst %.cc,%.o,$(wildcard replacement/ship++_l1i/*.cc))
+=======
+obj/l1ireplacement.a: $(patsubst %.cc,%.o,$(wildcard replacement/lime_l1i/*.cc))
+>>>>>>> 650d8d2973b64b932334dcc090edcd174dd8a406
 	@mkdir -p $(dir $@)
 	ar -rcs $@ $^
 

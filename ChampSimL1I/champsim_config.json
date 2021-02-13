@@ -48,8 +48,13 @@
         "latency": 4,
         "max_read": 2,
         "max_write": 2,
+<<<<<<< HEAD
         "prefetcher": "FNL-MMA",
         "replacement": "ship++_l1i"
+=======
+        "prefetcher": "Barca",
+        "replacement": "lime_l1i"
+>>>>>>> 650d8d2973b64b932334dcc090edcd174dd8a406
     },
 
     "L1D": {
