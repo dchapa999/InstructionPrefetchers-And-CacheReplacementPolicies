@@ -992,7 +992,7 @@ void O3_CPU::l1i_prefetcher_cycle_operate() {
 
 		// doesn't do any good to issue prefetches if the queue is full
 
-		if (L1I.PQ.occupancy < L1I.PQ.SIZE) {
+		if (L1I.PQ.occupancy() < L1I_PQ_SIZE) {
 
 			prefetch_info p;
 			if (prefetch_queue.size()) {
@@ -1001,7 +1001,7 @@ void O3_CPU::l1i_prefetcher_cycle_operate() {
 
 				p = prefetch_queue.front();
 				prefetch_queue.pop_front();
-			} else if ((L1I.PQ.occupancy == 0) && would_be_nice_queue.size()) {
+			} else if ((L1I.PQ.occupancy() == 0) && would_be_nice_queue.size()) {
 				// if ChampSim's prefetch queue is empty, issue one of those "would be nice" prefetches
 
 				p = would_be_nice_queue.front();
