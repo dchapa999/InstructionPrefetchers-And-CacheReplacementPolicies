@@ -28,9 +28,9 @@ Some of the replacement policies are hanging when modified to work on the L1I ca
 
 Week of 2/8/21
 Alex: 
-I plan to finish running simulations to get a baseline IPC for all of the prefetchers on the new ChampSim.
+This week I worked with David to finish running simulations of all prefetchers with different cache replacement policies.  
 
 David:
 I plan to run all simulations for the replacement policies individually, and I will begin running joint simulations with Alex.
 
-Team: We will begin combining our prefetchers and cache replacement policies and observing the results.
+Team: We compiled our results of our simulations.
