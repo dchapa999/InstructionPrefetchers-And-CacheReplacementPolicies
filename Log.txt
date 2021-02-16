@@ -31,6 +31,6 @@ Alex:
 This week I worked with David to finish running simulations of all prefetchers with different cache replacement policies.  
 
 David:
-I plan to run all simulations for the replacement policies individually, and I will begin running joint simulations with Alex.
+This week I ran all simulations for the replacement policies individually, and I began running joint simulations with Alex.
 
 Team: We compiled our results of our simulations.
