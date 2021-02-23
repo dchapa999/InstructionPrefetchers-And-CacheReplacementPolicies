@@ -34,3 +34,6 @@ David:
 This week I ran all simulations for the replacement policies individually, and I began running joint simulations with Alex.
 
 Team: We compiled our results of our simulations.
+
+Week of 2/15/21
+Team: Due to the CESG cluster going down during this week's weather, we were unable to make progress and lost more data we would've added to our results.
