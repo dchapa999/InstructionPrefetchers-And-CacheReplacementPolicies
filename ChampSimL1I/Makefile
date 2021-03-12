@@ -8,17 +8,17 @@ LDLIBS :=
 
 .phony: all clean
 
-all: bin/Barca_LIME
+all: bin/TAP_LIME
 
 clean: 
 	 find . -name \*.o -delete
 	 find . -name \*.d -delete
 	 $(RM) -r obj
 
-bin/Barca_LIME: $(patsubst %.cc,%.o,$(wildcard src/*.cc)) obj/cpu0l1iprefetcher.a obj/cpu0l1dprefetcher.a obj/cpu0l2cprefetcher.a obj/cpu0branch_predictor.a obj/cpu0btb.a obj/llprefetcher.a obj/llreplacement.a obj/l1ireplacement.a
+bin/TAP_LIME: $(patsubst %.cc,%.o,$(wildcard src/*.cc)) obj/cpu0l1iprefetcher.a obj/cpu0l1dprefetcher.a obj/cpu0l2cprefetcher.a obj/cpu0branch_predictor.a obj/cpu0btb.a obj/llprefetcher.a obj/llreplacement.a obj/l1ireplacement.a
 	$(CXX) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
-obj/cpu0l1iprefetcher.a: $(patsubst %.cc,%.o,$(wildcard prefetcher/Barca/*.cc))
+obj/cpu0l1iprefetcher.a: $(patsubst %.cc,%.o,$(wildcard prefetcher/TAP/*.cc))
 	@mkdir -p $(dir $@)
 	ar -rcs $@ $^
 
