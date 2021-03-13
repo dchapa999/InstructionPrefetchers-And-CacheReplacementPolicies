@@ -1010,7 +1010,7 @@ void O3_CPU::l1i_prefetcher_cycle_operate() {
 
 			// do the prefetch
 
-			prefetch_code_line (p.pf_addr);
+			prefetch_code_line (p.pf_addr, p.d);
 
 			//Add Confidence Level Metadata Here? 
 

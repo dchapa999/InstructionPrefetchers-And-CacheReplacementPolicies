@@ -238,6 +238,7 @@ class O3_CPU {
   void l1i_prefetcher_cache_fill(uint64_t v_addr, uint32_t set, uint32_t way, uint8_t prefetch, uint64_t evicted_v_addr);
   void l1i_prefetcher_final_stats();
   int prefetch_code_line(uint64_t pf_v_addr);
+  int prefetch_code_line(uint64_t pf_v_addr, double prob);
 };
 
 #endif

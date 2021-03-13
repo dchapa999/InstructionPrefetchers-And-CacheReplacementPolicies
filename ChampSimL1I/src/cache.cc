@@ -102,7 +102,13 @@ void CACHE::handle_writeback()
 
         if (way < NUM_WAY) // HIT
         {
-            update_replacement_state(handle_pkt.cpu, set, way, fill_block.full_addr, handle_pkt.ip, 0, handle_pkt.type, 1);
+            // Custom if statement checking for valid conf
+            if (handle_pkt.conf > 0) {
+                update_replacement_state_conf(handle_pkt.cpu, set, way, fill_block.full_addr, handle_pkt.ip, 0, handle_pkt.type, 1, handle_pkt.conf);
+            }
+            else {
+                update_replacement_state(handle_pkt.cpu, set, way, fill_block.full_addr, handle_pkt.ip, 0, handle_pkt.type, 1);
+            }
 
             // COLLECT STATS
             sim_hit[handle_pkt.cpu][handle_pkt.type]++;
@@ -222,7 +228,13 @@ void CACHE::readlike_hit(std::size_t set, std::size_t way, PACKET &handle_pkt)
     }
 
     // update replacement policy
-    update_replacement_state(handle_pkt.cpu, set, way, hit_block.full_addr, handle_pkt.ip, 0, handle_pkt.type, 1);
+    // Custom if statement checking valid conf
+    if (handle_pkt.conf > 0) {
+        update_replacement_state_conf(handle_pkt.cpu, set, way, fill_block.full_addr, handle_pkt.ip, 0, handle_pkt.type, 1, handle_pkt.conf);
+    }
+    else {
+        update_replacement_state(handle_pkt.cpu, set, way, fill_block.full_addr, handle_pkt.ip, 0, handle_pkt.type, 1);
+    }
 
     // COLLECT STATS
     sim_hit[handle_pkt.cpu][handle_pkt.type]++;
@@ -413,7 +425,13 @@ bool CACHE::filllike_miss(std::size_t set, std::size_t way, PACKET &handle_pkt)
     }
 
     // update replacement policy
-    update_replacement_state(handle_pkt.cpu, set, way, handle_pkt.full_addr, handle_pkt.ip, 0, handle_pkt.type, 0);
+    // custom if statement to check valid conf
+    if (handle_pkt.conf > 0) {
+        update_replacement_state_conf(handle_pkt.cpu, set, way, fill_block.full_addr, handle_pkt.ip, 0, handle_pkt.type, 0, handle_pkt.conf);
+    }
+    else {
+        update_replacement_state(handle_pkt.cpu, set, way, fill_block.full_addr, handle_pkt.ip, 0, handle_pkt.type, 0);
+    }
 
     // COLLECT STATS
     sim_miss[handle_pkt.cpu][handle_pkt.type]++;

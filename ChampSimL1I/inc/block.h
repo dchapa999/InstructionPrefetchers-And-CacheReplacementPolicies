@@ -52,6 +52,9 @@ class PACKET {
              cycle_enqueued = 0;
 
     std::list<MemoryRequestProducer*> to_return;
+
+    //Custom Conf Variable
+    double conf = 0;
 };
 
 template <typename LIST>
