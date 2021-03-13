@@ -1,0 +1,32 @@
+
+VirtualMemory physical capacity: 8589934592 num_ppages: 2097152
+VirtualMemory page size: 4096 log2_page_size: 12
+VirtualMemory initalizing ppage free list ... done
+VirtualMemory shuffling ppage free list ... done
+
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 50000000
+Simulation Instructions: 50000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
+
+CPU 0 runs ipc1_public/spec_gobmk_002.champsimtrace.xz
+CPU 0 Bimodal branch predictor
+Basic BTB sets: 1024 ways: 8 indirect buffer size: 4096 RAS size: 64
+CPU 0 Temporal Ancestry L1I prefetcher
+Heartbeat CPU 0 instructions: 10000001 cycles: 2731031 heartbeat IPC: 3.66162 cumulative IPC: 3.66162 (Simulation time: 0 hr 19 min 15 sec) 
+Heartbeat CPU 0 instructions: 20000000 cycles: 5413159 heartbeat IPC: 3.72838 cumulative IPC: 3.6947 (Simulation time: 0 hr 39 min 29 sec) 
+Heartbeat CPU 0 instructions: 30000000 cycles: 8161456 heartbeat IPC: 3.63862 cumulative IPC: 3.67581 (Simulation time: 0 hr 59 min 30 sec) 
+Heartbeat CPU 0 instructions: 40000000 cycles: 10976561 heartbeat IPC: 3.55227 cumulative IPC: 3.64413 (Simulation time: 1 hr 20 min 35 sec) 
+Heartbeat CPU 0 instructions: 50000001 cycles: 13797469 heartbeat IPC: 3.54496 cumulative IPC: 3.62385 (Simulation time: 1 hr 37 min 2 sec) 
+
+Warmup complete CPU 0 instructions: 50000001 cycles: 13797469 (Simulation time: 1 hr 37 min 2 sec) 
+
+Heartbeat CPU 0 instructions: 60000003 cycles: 22597844 heartbeat IPC: 1.13632 cumulative IPC: 1.13632 (Simulation time: 1 hr 57 min 25 sec) 
+Heartbeat CPU 0 instructions: 70000002 cycles: 31376298 heartbeat IPC: 1.13915 cumulative IPC: 1.13773 (Simulation time: 2 hr 12 min 36 sec) 
+Heartbeat CPU 0 instructions: 80000000 cycles: 40072079 heartbeat IPC: 1.14998 cumulative IPC: 1.14179 (Simulation time: 2 hr 25 min 4 sec) 
+Heartbeat CPU 0 instructions: 90000002 cycles: 48132855 heartbeat IPC: 1.24058 cumulative IPC: 1.16498 (Simulation time: 2 hr 33 min 56 sec) 
