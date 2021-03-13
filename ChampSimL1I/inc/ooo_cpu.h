@@ -171,7 +171,7 @@ class O3_CPU {
         ITLB.update_replacement_state = std::bind(&CACHE::lru_update, &ITLB, _2, _3, _7, _8);
         DTLB.update_replacement_state = std::bind(&CACHE::lru_update, &DTLB, _2, _3, _7, _8);
         STLB.update_replacement_state = std::bind(&CACHE::lru_update, &STLB, _2, _3, _7, _8);
-        L1I.update_replacement_state = std::bind(&CACHE::l1i_update_replacement_state, &L1I, _1, _2, _3, _4, _5, _6, _7, _8);
+        L1I.update_replacement_state_conf = std::bind(&CACHE::l1i_update_replacement_state_conf, &L1I, _1, _2, _3, _4, _5, _6, _7, _8, _9);
         L1D.update_replacement_state = std::bind(&CACHE::lru_update, &L1D, _2, _3, _7, _8);
         L2C.update_replacement_state = std::bind(&CACHE::lru_update, &L2C, _2, _3, _7, _8);
 
