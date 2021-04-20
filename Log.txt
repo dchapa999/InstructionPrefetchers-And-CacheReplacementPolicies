@@ -37,3 +37,33 @@ Team: We compiled our results of our simulations.
 
 Week of 2/15/21
 Team: Due to the CESG cluster going down during this week's weather, we were unable to make progress and lost more data we would've added to our results.
+
+Week of 2/22/21
+Team: Could not access CESG Cluster. Began looking into which combination we would work on optimizing.
+
+Week of 3/1/21
+Team: Began brainstorming ideas to modify Barca-SRRIP. We read the KPC paper to get information about communication between prefetchers and cache replacement policies.
+
+Week of 3/8/21
+Team: Began modifying the ChampSim code to allow us to send prefetch Metadata to the cache replacement policy.
+
+Week of 3/15/21
+Team: Finished ChampSim modifications. We began to modify Barca-SRRIP and ran tests on the modified versions.
+
+Week of 3/22/21
+Team: We continued to optimize our modifications for Barca-SRRIP and ran tests on the modified versions. Began writing final thesis installment.
+
+Week of 3/29/21
+Team: Finished draft of thesis and sent to advisor for revision. Continued to optimize Barca-SRRIP combination to get a higher speedup.
+
+Week of 4/5/21
+Team: Finished modifications for Barca-SRRIP and compiled results to choose best modification.
+
+Week of 4/12/21
+Team: Began working on the final demo video.
+
+Week of 4/19/21
+Team: Finished demo video and preparinf for Q&A.
+
+Week of 4/26/21
+Team: We will finish the final report.
