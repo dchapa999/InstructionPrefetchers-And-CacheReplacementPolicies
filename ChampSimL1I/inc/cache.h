@@ -150,8 +150,8 @@ class CACHE : public MemoryRequestConsumer, public MemoryRequestProducer {
 
 // Custom Overloaded Update_replacement_state with conf value
 
-    std::function<void(uint32_t, uint32_t, uint32_t, uint64_t, uint64_t, uint64_t, uint32_t, uint8_t, double)> update_replacement_state_conf;
-    void llc_update_replacement_state_conf(uint32_t cpu, uint32_t set, uint32_t way, uint64_t full_addr, uint64_t ip, uint64_t victim_addr, uint32_t type, uint8_t hit, double conf);
+    //std::function<void(uint32_t, uint32_t, uint32_t, uint64_t, uint64_t, uint64_t, uint32_t, uint8_t, double)> update_replacement_state_conf;
+    //void llc_update_replacement_state_conf(uint32_t cpu, uint32_t set, uint32_t way, uint64_t full_addr, uint64_t ip, uint64_t victim_addr, uint32_t type, uint8_t hit, double conf);
     void l1i_update_replacement_state_conf(uint32_t cpu, uint32_t set, uint32_t way, uint64_t full_addr, uint64_t ip, uint64_t victim_addr, uint32_t type, uint8_t hit, double conf);
 
 
